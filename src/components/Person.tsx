@@ -13,7 +13,7 @@ const Person = () => {
             <h1>Personal Information </h1>
             <div className="flex flex-col w-[400px]  border-b border-t rounded-2xl bg-slate-600 text-center" key={person?.id}>
 
-                <img className="  rounded-t-2xl h-[300px] w-[400px] object-cover " src={`../image/${person?.imageUrl}.avif`} alt="" />
+                <img className="  rounded-t-2xl w-[400px] h-[450px] object-cover " src={`../image/${person?.imageUrl}.avif`} alt="" />
                 <span className="flex flex-col w-[400px] items-center justify-center mt-4 gap-8">
                     <h2 className="border-b w-full ">{person?.name}</h2>
                     <p className="border-b w-full ">{person?.age}</p>

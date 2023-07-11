@@ -1,6 +1,6 @@
- 
+
 const PageAbout = () => {
-   
+
   return (
     <div className="h-screen ">
       about
