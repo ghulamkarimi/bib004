@@ -1,11 +1,11 @@
+import About from "../components/About";
 
 const PageAbout = () => {
-
   return (
-    <div className="h-screen ">
-      about
+    <div>
+      <About />
     </div>
-  )
-}
+  );
+};
 
-export default PageAbout
+export default PageAbout;
