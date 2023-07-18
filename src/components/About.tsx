@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className=" flex gap-6 items-center mt-16 px-4">
+    <div className=" flex gap-6 items-center my-16 px-4">
       <img
         className="w-[50%] h-[70vh] object-cover rounded-lg"
         src="/image/image.avif"
