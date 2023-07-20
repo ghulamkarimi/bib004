@@ -1,0 +1,14 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.active {
+  color: blue;
+}
+
+.footer-container {
+  background: url(/image/Screenshot\ 2023-07-18\ 102600.png) no-repeat
+    center/cover;
+  height: 45vh;
+  width: 100%;
+}
