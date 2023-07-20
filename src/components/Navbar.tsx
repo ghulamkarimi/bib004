@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <header className={`flex px-4 gap-4 py-2 items-center sticky top-0 justify-around ${isLight ? "bg-slate-400 " : "bg-yellow-400"}`}>
             <AiOutlineBars className={`text-2xl flex md:hidden ${isActiveMenu ? "hidden" : "flex"}`} onClick={menuHandler} />
-            <h1 className=" text-blue-700 text-2xl">Pesonalverwaltung</h1>
+            <h1 className=" text-blue-700 text-2xl hidden md:flex">Pesonalverwaltung</h1>
             <ul className=" gap-8 hidden md:flex ">
                 <li><NavLink to="/home">Home</NavLink></li>
                 <li><NavLink to="/about">About</NavLink></li>

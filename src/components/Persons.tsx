@@ -14,11 +14,11 @@ const Persons = () => {
         .map((p) => (
           <NavLink
             to={`/home/${p.id}`}
-            className="flex w-[400px] border-b rounded-2xl  bg-slate-600"
+            className="flex flex-col w-[270px] border-b rounded-2xl  bg-slate-600 md:w-[400px] md:flex-row"
             key={p.id}
           >
             <img
-              className="  rounded-l-2xl h-[300px] w-[200px] object-cover "
+              className="  rounded-l-2xl h-[300px] w-[270px] object-cover "
               src={`image/${p.imageUrl}.avif`}
               alt=""
             />

@@ -4,7 +4,7 @@ import SearchButton from "../components/SearchButton";
 const PageHome = () => {
   return (
     <div>
-      <span className="flex items-center justify-center gap-14">
+      <span className="flex flex-col items-center justify-center mb-4 md:flex-row gap-6">
         <h1 className="py-6 text-center text-3xl font-bold ">
           Personalverwaltung
         </h1>
