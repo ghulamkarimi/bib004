@@ -1,12 +1,12 @@
 const About = () => {
   return (
-    <div className=" flex gap-6 items-center my-16 px-4">
+    <div className="flex sm:flex-col gap-6 items-center my-10 px-4">
       <img
-        className="w-[50%] h-[70vh] object-cover rounded-lg"
+        className=" h-[600px] w-full  object-cover rounded-lg"
         src="/image/image.avif"
         alt=""
       />
-      <span className="w-full flex flex-col gap-3 ">
+      <span className=" sm:flex w-full flex flex-col gap-3 ">
         <h2 className="text-center text-2xl font-bold">HR-Management 360</h2>
         <p className=" ">
           Willkommen bei HR-Management 360! Wir bieten umfassende Ressourcen und

@@ -16,11 +16,11 @@ const Footer = () => {
         </button>
       </div>
 
-      <div className="  grid grid-cols-3 py-12 px-20 border-r-2 ">
+      <div className="grid sm:grid-cols-1 bg-yellow-400 gap-10 place-items-center lg:grid-cols-3 py-12 px-20 border-r-2 ">
         <div className="flex flex-col gap-3 ">
           <span className="flex gap-4 items-center  ">
-            <BsCheck2All className="text-yellow-800" />
-            <p className="uppercase text-2xl tracking-[.25em] text-yellow-800">
+            <BsCheck2All className="text-green-700" />
+            <p className="uppercase text-2xl tracking-[.25em] text-green-700">
               hook
             </p>
           </span>
@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
 
         <nav>
-          <p className="uppercase mb-4 text-yellow-800">sitemap</p>
+          <p className="uppercase mb-4 text-green-700">sitemap</p>
           <ul className="flex flex-col gap-4">
             <li>
               <NavLink to="/home">Home</NavLink>
@@ -45,16 +45,16 @@ const Footer = () => {
           </ul>
         </nav>
         <div className="flex flex-col gap-4">
-          <p className="uppercase text-yellow-800  ">
+          <p className="uppercase text-green-700  ">
             want our best marketing tipps?
           </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
             reiciendis odio molestias.
           </p>
-          <span className="bg-yellow-500 w-[260px] rounded-lg">
+          <span className="bg-yellow-500 cursor-pointer w-[260px] rounded-lg">
             <input
-              className="p-1 rounded-l-lg"
+              className="p-1 rounded-l-lg outline-none"
               type="email"
               placeholder="Email"
             />

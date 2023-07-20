@@ -1,11 +1,13 @@
 import Persons from "../components/Persons";
+import SearchButton from "../components/SearchButton";
 
 const PageHome = () => {
   return (
     <div>
-      <h1 className="py-6 text-center text-3xl font-bold ">
-        Personalverwaltung
-      </h1>
+      <span className="flex items-center justify-center gap-10">
+        <h1 className="py-6 text-3xl font-bold ">Personalverwaltung</h1>
+        <SearchButton />
+      </span>
       <p className="text-center font-bold">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, possimus
         laborum illum blanditiis, sapiente odit veritatis eum libero minus

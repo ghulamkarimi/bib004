@@ -10,6 +10,8 @@ interface IApp {
   person: IPerson[];
   setPerson: (person: IPerson[]) => void;
   getPerson: (idPerson: number) => IPerson | undefined;
+  filter:string;
+  setFilter:React.Dispatch<React.SetStateAction<string>>
 }
 interface IAppProvider {
   children: React.ReactNode;
@@ -23,6 +25,7 @@ export const AppContextProvider: React.FC<IAppProvider> = ({ children }) => {
   const menuHandler = () => {
     setIsActiveMenu(!isActiveMenu);
   };
+  const [filter,setFilter] = useState("")
   const [person, setPerson] = useState(Data.person);
   const getPerson = (idPerson: number) => {
     return person.find((person) => person.id === idPerson);
@@ -38,6 +41,7 @@ export const AppContextProvider: React.FC<IAppProvider> = ({ children }) => {
         person,
         setPerson,
         getPerson,
+        filter,setFilter
       }}
     >
       {children}
