@@ -10,6 +10,8 @@ interface IApp {
   person: IPerson[];
   setPerson: (person: IPerson[]) => void;
   getPerson: (idPerson: number) => IPerson | undefined;
+  filter: string;
+  setFilter: React.Dispatch<React.SetStateAction<string>>;
 }
 interface IAppProvider {
   children: React.ReactNode;
@@ -19,6 +21,7 @@ export const AppContext = createContext<IApp>({} as IApp);
 
 export const AppContextProvider: React.FC<IAppProvider> = ({ children }) => {
   const [isLight, setIsLight] = useState(false);
+  const [filter, setFilter] = useState("");
   const [isActiveMenu, setIsActiveMenu] = useState(false);
   const menuHandler = () => {
     setIsActiveMenu(!isActiveMenu);
@@ -38,6 +41,8 @@ export const AppContextProvider: React.FC<IAppProvider> = ({ children }) => {
         person,
         setPerson,
         getPerson,
+        filter,
+        setFilter,
       }}
     >
       {children}

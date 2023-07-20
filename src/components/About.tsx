@@ -1,8 +1,8 @@
 const About = () => {
   return (
-    <div className=" flex gap-6 items-center my-16 px-4">
+    <div className=" mt-10 items-center px-4 lg:flex gap-4 mb-6">
       <img
-        className="w-[50%] h-[70vh] object-cover rounded-lg"
+        className="object-cover w-full h-[300px] rounded-lg lg:w-[50%] lg:h-[600px]"
         src="/image/image.avif"
         alt=""
       />
