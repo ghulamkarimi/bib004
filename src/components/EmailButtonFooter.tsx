@@ -7,7 +7,7 @@ const EmailButtonFooter = () => {
           type="email"
           placeholder="Email"
         />
-        <span className="py-1 px-2 rounded-r-lg  bg-yellow-500">sign up</span>
+        <span className="py-[5px] px-2 rounded-r-lg bg-yellow-500">sign up</span>
       </span>
     </div>
   );
