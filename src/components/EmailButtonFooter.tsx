@@ -1,7 +1,7 @@
 const EmailButtonFooter = () => {
   return (
     <div>
-      <span className="bg-yellow-500  w-[260px] rounded-lg">
+      <span className="bg-yellow-500  w-[290px] rounded-lg">
         <input
           className="py-1 px-2 rounded-l-lg"
           type="email"
